@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <th:block th:include="include :: header('表格搜索')"/>
+    <th:block th:include="include :: bootstrap-select-css"/>
+</head>
+<body class="gray-bg">
+<div class="container-div">
+    <div class="row">
+        <div class="col-sm-12 search-collapse">
+            <form id="time-form">
+                <div class="select-list">
+                    <ul>
+                        <li>
+                            数据名称：<input type="text" name="userId"/>
+                        </li>
+                        <li class="select-time">
+                            <label>采集时间： </label>
+                            <input type="text" class="time-input" id="startTime" placeholder="开始时间"
+                                   name="params[beginTime]"/>
+                            <span>-</span>
+                            <input type="text" class="time-input" id="endTime" placeholder="结束时间"
+                                   name="params[endTime]"/>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i
+                                    class="fa fa-search"></i>&nbsp;搜索</a>
+                            <a class="btn btn-warning btn-rounded btn-sm" onclick="$.form.reset('time-form')"><i
+                                    class="fa fa-refresh"></i>&nbsp;重置</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-12 select-table table-striped">
+            <table id="bootstrap-table"></table>
+        </div>
+    </div>
+</div>
+<th:block th:include="include :: footer"/>
+<th:block th:include="include :: bootstrap-select-js"/>
+<th:block th:include="include :: jquery-cxselect-js"/>
+
+<script th:inline="javascript">
+    var prefix = ctx + "demo/table";
+    var datas = [[${@dict.getType('sys_normal_disable')}]];
+
+    $(function () {
+        var options = {
+            // url: prefix + "/list",
+            // rememberSelected: true,
+            columns: [{
+                field: 'state',
+                checkbox: true
+            },
+                {
+                    field: 'dataName',
+                    title: '数据名称'
+                },
+                {
+                    field: 'collectionTime',
+                    title: '采集时间'
+                },
+                {
+                    field: 'updateTime',
+                    title: '更新时间'
+                },
+                {
+                    title: '操作',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        var actions = [];
+                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit">检测</i></a> ');
+                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>报告</a> ');
+                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>编辑</a> ');
+                        actions.push('<a class="btn btn-danger btn-xs" href="javascript:;"><i class="fa fa-remove"></i>删除</a> ');
+                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>同步</a>');
+                        return actions.join('');
+                    }
+                }],
+            data: [
+                {
+                    "dataName": "LFIR01",
+                    "collectionTime": "2025-03-15 15:37:02",
+                    "updateTime": "2025-03-15 16:02:36"
+                },
+                {
+                    "dataName": "LFIR02",
+                    "collectionTime": "2025-03-20 14:01:48",
+                    "updateTime": "2025-03-20 14:30:12"
+                },
+                {
+                    "dataName": "LFIR03",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 15:45:29"
+                },
+                {
+                    "dataName": "LFIR04",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 16:10:55"
+                },
+                {
+                    "dataName": "LFIR05",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 17:05:43"
+                },
+                {
+                    "dataName": "LFIR06",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 18:20:14"
+                },
+                {
+                    "dataName": "LFIR07",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 19:15:37"
+                },
+                {
+                    "dataName": "LFIR08",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 20:30:08"
+                },
+                {
+                    "dataName": "LFIR09",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 21:45:22"
+                },
+                {
+                    "dataName": "LFIR10",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 22:50:59"
+                },
+                {
+                    "dataName": "LFIR11",
+                    "collectionTime": "2025-03-21 15:18:07",
+                    "updateTime": "2025-03-21 22:50:59"
+                }
+            ],
+            total: 10,
+            pageSize: 10,
+            pagination: true,
+            sidePagination: 'client',
+            showPageGo: true
+        };
+        $.table.init(options);
+    });
+</script>
+</body>
+</html>

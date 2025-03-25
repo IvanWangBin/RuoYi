@@ -11,7 +11,7 @@
  Target Server Version : 80041 (8.0.41)
  File Encoding         : 65001
 
- Date: 25/03/2025 00:05:41
+ Date: 25/03/2025 22:37:34
 */
 
 SET NAMES utf8mb4;
@@ -560,7 +560,7 @@ CREATE TABLE `sys_logininfor` (
                                   PRIMARY KEY (`info_id`),
                                   KEY `idx_sys_logininfor_s` (`status`),
                                   KEY `idx_sys_logininfor_lt` (`login_time`)
-) ENGINE=InnoDB AUTO_INCREMENT=133 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='系统访问记录';
+) ENGINE=InnoDB AUTO_INCREMENT=168 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='系统访问记录';
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -599,6 +599,41 @@ INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location
 INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (130, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-24 15:43:05');
 INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (131, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-24 15:44:03');
 INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (132, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-24 15:48:53');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (133, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 06:56:42');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (134, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 07:22:10');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (135, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 08:36:09');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (136, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 12:07:10');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (137, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 12:17:48');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (138, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '1', '验证码错误', '2025-03-25 12:47:56');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (139, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 12:47:59');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (140, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 13:08:31');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (141, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 13:57:26');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (142, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:22:44');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (143, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:22:57');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (144, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:23:33');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (145, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:23:37');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (146, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:25:50');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (147, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:26:07');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (148, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:26:21');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (149, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:26:25');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (150, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:27:07');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (151, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:27:12');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (152, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:29:16');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (153, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:29:23');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (154, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:29:28');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (155, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:31:07');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (156, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:31:13');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (157, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:33:04');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (158, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:33:08');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (159, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '1', '验证码错误', '2025-03-25 14:33:12');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (160, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:33:16');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (161, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:35:12');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (162, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:35:18');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (163, 'admin', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:36:03');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (164, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:36:12');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (165, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:36:35');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (166, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '登录成功', '2025-03-25 14:36:40');
+INSERT INTO `sys_logininfor` (`info_id`, `login_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `msg`, `login_time`) VALUES (167, 'chumengyuan', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', '0', '退出成功', '2025-03-25 14:36:48');
 COMMIT;
 
 -- ----------------------------
@@ -717,12 +752,12 @@ INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`,
 INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2000, '数据采集', 0, 2, '#', 'menuItem', 'M', '0', '1', NULL, 'fa fa-camera', 'admin', '2025-03-24 12:37:02', '', NULL, '');
 INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2001, '乳房炎检测', 0, 3, '#', 'menuItem', 'M', '0', '1', NULL, 'fa fa-tint', 'admin', '2025-03-24 12:38:33', '', NULL, '');
 INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2002, '信息管理', 0, 4, '#', 'menuItem', 'M', '0', '1', NULL, 'fa fa-book', 'admin', '2025-03-24 12:39:47', '', NULL, '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2003, '热像仪参数设置', 2000, 1, '/data-acquisition/param-setting', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 14:58:32', 'admin', '2025-03-24 15:43:26', '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2004, '热红外数据获取', 2000, 2, '/data-acquisition/acquisition', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 14:58:58', 'admin', '2025-03-24 15:49:12', '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2005, '数据选择', 2001, 1, '#', 'menuItem', 'C', '0', '1', NULL, '#', 'admin', '2025-03-24 15:00:11', '', NULL, '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2006, '乳房炎检测', 2001, 2, '#', 'menuItem', 'C', '0', '1', NULL, '#', 'admin', '2025-03-24 15:00:28', '', NULL, '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2007, '数据管理', 2002, 1, '#', 'menuItem', 'C', '0', '1', NULL, '#', 'admin', '2025-03-24 15:01:01', '', NULL, '');
-INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2008, '健康报告', 2002, 2, '#', 'menuItem', 'C', '0', '1', NULL, '#', 'admin', '2025-03-24 15:01:15', '', NULL, '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2003, '热像仪参数设置', 2000, 1, '/data-acquisition/param-setting', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 14:58:32', 'admin', '2025-03-25 14:30:44', '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2004, '热红外数据获取', 2000, 2, '/data-acquisition/acquisition', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 14:58:58', 'admin', '2025-03-25 14:30:29', '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2005, '数据选择', 2001, 1, '/mastitis-detect/data-selection', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 15:00:11', 'admin', '2025-03-25 14:30:18', '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2006, '乳房炎检测', 2001, 2, '/mastitis-detect/detect', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 15:00:28', 'admin', '2025-03-25 14:30:39', '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2007, '数据管理', 2002, 1, '#', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 15:01:01', 'admin', '2025-03-25 14:30:50', '');
+INSERT INTO `sys_menu` (`menu_id`, `menu_name`, `parent_id`, `order_num`, `url`, `target`, `menu_type`, `visible`, `is_refresh`, `perms`, `icon`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2008, '健康报告', 2002, 2, '#', 'menuItem', 'C', '0', '1', '', '#', 'admin', '2025-03-24 15:01:15', 'admin', '2025-03-25 14:30:57', '');
 COMMIT;
 
 -- ----------------------------
@@ -778,7 +813,7 @@ CREATE TABLE `sys_oper_log` (
                                 KEY `idx_sys_oper_log_bt` (`business_type`),
                                 KEY `idx_sys_oper_log_s` (`status`),
                                 KEY `idx_sys_oper_log_ot` (`oper_time`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='操作日志记录';
+) ENGINE=InnoDB AUTO_INCREMENT=136 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='操作日志记录';
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -801,6 +836,25 @@ INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `requ
 INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (114, '个人信息', 2, 'com.ruoyi.web.controller.system.SysProfileController.update()', 'POST', 1, 'admin', '研发部门', '/system/user/profile/update', '127.0.0.1', '内网IP', '{\"id\":[\"\"],\"userName\":[\"管理员\"],\"phonenumber\":[\"15888888888\"],\"email\":[\"ry@163.com\"],\"sex\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-24 15:31:54', 50);
 INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (115, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2003\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热像仪参数设置\"],\"url\":[\"/data-acquisition/param-setting\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-24 15:43:26', 13);
 INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (116, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2004\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热红外数据获取\"],\"url\":[\"/data-acquisition/acquisition\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-24 15:49:12', 45);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (117, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2005\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"数据选择\"],\"url\":[\"/mastitis-detect/data-selection\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 07:22:25', 102);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (118, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2006\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"乳房炎检测\"],\"url\":[\"/mastitis-detect/detect\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 13:08:44', 172);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (119, '用户管理', 1, 'com.ruoyi.web.controller.system.SysUserController.addSave()', 'POST', 1, 'admin', '研发部门', '/system/user/add', '127.0.0.1', '内网IP', '{\"deptId\":[\"\"],\"userName\":[\"初梦苑\"],\"deptName\":[\"\"],\"phonenumber\":[\"\"],\"email\":[\"\"],\"loginName\":[\"chumengyuan\"],\"sex\":[\"1\"],\"remark\":[\"\"],\"status\":[\"0\"],\"roleIds\":[\"\"],\"postIds\":[\"\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 13:58:09', 138);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (120, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"2\"],\"roleName\":[\"普通角色\"],\"roleKey\":[\"common\"],\"roleSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"普通角色\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,2000,2003,2004,2001,2005,2006,2002,2007,2008\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:22:36', 48);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (121, '用户管理', 2, 'com.ruoyi.web.controller.system.SysUserController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/user/edit', '127.0.0.1', '内网IP', '{\"userId\":[\"100\"],\"deptId\":[\"\"],\"userName\":[\"初梦苑\"],\"dept.deptName\":[\"\"],\"phonenumber\":[\"\"],\"email\":[\"\"],\"loginName\":[\"chumengyuan\"],\"sex\":[\"1\"],\"role\":[\"2\"],\"remark\":[\"\"],\"status\":[\"0\"],\"roleIds\":[\"2\"],\"postIds\":[\"\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:22:42', 36);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (122, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2003\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热像仪参数设置\"],\"url\":[\"/data-acquisition/param-setting\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:05', 16);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (123, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2004\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热红外数据获取\"],\"url\":[\"/data-acquisition/acquisition\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:15', 15);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (124, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2005\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"数据选择\"],\"url\":[\"/mastitis-detect/data-selection\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:23', 15);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (125, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2006\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"乳房炎检测\"],\"url\":[\"/mastitis-detect/detect\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:32', 14);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (126, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2007\"],\"parentId\":[\"2002\"],\"menuType\":[\"C\"],\"menuName\":[\"数据管理\"],\"url\":[\"#\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:39', 27);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (127, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2002\"],\"menuType\":[\"C\"],\"menuName\":[\"健康报告\"],\"url\":[\"#\"],\"target\":[\"menuItem\"],\"perms\":[\"common\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:25:46', 19);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (128, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"2\"],\"roleName\":[\"普通角色\"],\"roleKey\":[\"@RequiresRoles(\\\"\\\")\"],\"roleSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"普通角色\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,2000,2003,2004,2001,2005,2006,2002,2007,2008\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:27:01', 53);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (129, '角色管理', 2, 'com.ruoyi.web.controller.system.SysRoleController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"2\"],\"roleName\":[\"普通角色\"],\"roleKey\":[\"common\"],\"roleSort\":[\"2\"],\"status\":[\"0\"],\"remark\":[\"普通角色\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,2000,2003,2004,2001,2005,2006,2002,2007,2008\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:02', 103);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (130, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2005\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"数据选择\"],\"url\":[\"/mastitis-detect/data-selection\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:18', 26);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (131, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2004\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热红外数据获取\"],\"url\":[\"/data-acquisition/acquisition\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:29', 22);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (132, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2006\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"乳房炎检测\"],\"url\":[\"/mastitis-detect/detect\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:39', 18);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (133, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2003\"],\"parentId\":[\"2000\"],\"menuType\":[\"C\"],\"menuName\":[\"热像仪参数设置\"],\"url\":[\"/data-acquisition/param-setting\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:44', 17);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (134, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2007\"],\"parentId\":[\"2002\"],\"menuType\":[\"C\"],\"menuName\":[\"数据管理\"],\"url\":[\"#\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:50', 19);
+INSERT INTO `sys_oper_log` (`oper_id`, `title`, `business_type`, `method`, `request_method`, `operator_type`, `oper_name`, `dept_name`, `oper_url`, `oper_ip`, `oper_location`, `oper_param`, `json_result`, `status`, `error_msg`, `oper_time`, `cost_time`) VALUES (135, '菜单管理', 2, 'com.ruoyi.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2002\"],\"menuType\":[\"C\"],\"menuName\":[\"健康报告\"],\"url\":[\"#\"],\"target\":[\"menuItem\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"],\"isRefresh\":[\"1\"]}', '{\"msg\":\"操作成功\",\"code\":0}', 0, NULL, '2025-03-25 14:30:57', 17);
 COMMIT;
 
 -- ----------------------------
@@ -856,7 +910,7 @@ CREATE TABLE `sys_role` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `sys_role` (`role_id`, `role_name`, `role_key`, `role_sort`, `data_scope`, `status`, `del_flag`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (1, '超级管理员', 'admin', 1, '1', '0', '0', 'admin', '2025-03-24 06:13:55', '', NULL, '超级管理员');
-INSERT INTO `sys_role` (`role_id`, `role_name`, `role_key`, `role_sort`, `data_scope`, `status`, `del_flag`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2, '普通角色', 'common', 2, '2', '0', '0', 'admin', '2025-03-24 06:13:55', '', NULL, '普通角色');
+INSERT INTO `sys_role` (`role_id`, `role_name`, `role_key`, `role_sort`, `data_scope`, `status`, `del_flag`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2, '普通角色', 'common', 2, '2', '0', '0', 'admin', '2025-03-24 06:13:55', 'admin', '2025-03-25 14:30:02', '普通角色');
 COMMIT;
 
 -- ----------------------------
@@ -893,28 +947,7 @@ CREATE TABLE `sys_role_menu` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 3);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 4);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 100);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 101);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 102);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 103);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 104);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 105);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 106);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 107);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 108);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 109);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 110);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 111);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 112);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 113);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 114);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 115);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 116);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 500);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 501);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1000);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1001);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1002);
@@ -922,61 +955,15 @@ INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1003);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1004);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1005);
 INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1006);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1007);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1008);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1009);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1010);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1011);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1012);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1013);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1014);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1015);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1016);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1017);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1018);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1019);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1020);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1021);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1022);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1023);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1024);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1025);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1026);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1027);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1028);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1029);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1030);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1031);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1032);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1033);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1034);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1035);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1036);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1037);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1038);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1039);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1040);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1041);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1042);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1043);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1044);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1045);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1046);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1047);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1048);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1049);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1050);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1051);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1052);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1053);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1054);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1055);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1056);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1057);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1058);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1059);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1060);
-INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 1061);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2000);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2001);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2002);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2003);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2004);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2005);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2006);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2007);
+INSERT INTO `sys_role_menu` (`role_id`, `menu_id`) VALUES (2, 2008);
 COMMIT;
 
 -- ----------------------------
@@ -1006,14 +993,15 @@ CREATE TABLE `sys_user` (
                             `update_time` datetime DEFAULT NULL COMMENT '更新时间',
                             `remark` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '备注',
                             PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='用户信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci COMMENT='用户信息表';
 
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_user` (`user_id`, `dept_id`, `login_name`, `user_name`, `user_type`, `email`, `phonenumber`, `sex`, `avatar`, `password`, `salt`, `status`, `del_flag`, `login_ip`, `login_date`, `pwd_update_date`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (1, 103, 'admin', '管理员', '00', 'ry@163.com', '15888888888', '1', '', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2025-03-24 23:48:54', NULL, 'admin', '2025-03-24 06:13:55', '', '2025-03-24 15:48:53', '管理员');
+INSERT INTO `sys_user` (`user_id`, `dept_id`, `login_name`, `user_name`, `user_type`, `email`, `phonenumber`, `sex`, `avatar`, `password`, `salt`, `status`, `del_flag`, `login_ip`, `login_date`, `pwd_update_date`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (1, 103, 'admin', '管理员', '00', 'ry@163.com', '15888888888', '1', '', '29c67a30398638269fe600f73a054934', '111111', '0', '0', '127.0.0.1', '2025-03-25 22:35:19', NULL, 'admin', '2025-03-24 06:13:55', '', '2025-03-25 14:35:18', '管理员');
 INSERT INTO `sys_user` (`user_id`, `dept_id`, `login_name`, `user_name`, `user_type`, `email`, `phonenumber`, `sex`, `avatar`, `password`, `salt`, `status`, `del_flag`, `login_ip`, `login_date`, `pwd_update_date`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (2, 105, 'ry', '若依', '00', 'ry@qq.com', '15666666666', '1', '', '8e6d98b90472783cc73c17047ddccf36', '222222', '0', '0', '127.0.0.1', NULL, NULL, 'admin', '2025-03-24 06:13:55', '', NULL, '测试员');
+INSERT INTO `sys_user` (`user_id`, `dept_id`, `login_name`, `user_name`, `user_type`, `email`, `phonenumber`, `sex`, `avatar`, `password`, `salt`, `status`, `del_flag`, `login_ip`, `login_date`, `pwd_update_date`, `create_by`, `create_time`, `update_by`, `update_time`, `remark`) VALUES (100, NULL, 'chumengyuan', '初梦苑', '00', '', '', '1', '', '410de0ac613bfa17bccddcf1afedd7b8', '08a96c', '0', '0', '127.0.0.1', '2025-03-25 22:36:41', '2025-03-25 21:58:10', 'admin', '2025-03-25 13:58:09', 'admin', '2025-03-25 14:36:40', '');
 COMMIT;
 
 -- ----------------------------
@@ -1039,7 +1027,6 @@ CREATE TABLE `sys_user_online` (
 -- Records of sys_user_online
 -- ----------------------------
 BEGIN;
-INSERT INTO `sys_user_online` (`sessionId`, `login_name`, `dept_name`, `ipaddr`, `login_location`, `browser`, `os`, `status`, `start_timestamp`, `last_access_time`, `expire_time`) VALUES ('4b4e1ea5-b2d4-45b2-8ac8-2fa90ba011fa', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome 13', 'Mac OS X', 'on_line', '2025-03-24 23:19:04', '2025-03-25 00:04:26', 1800000);
 COMMIT;
 
 -- ----------------------------
@@ -1076,6 +1063,7 @@ CREATE TABLE `sys_user_role` (
 BEGIN;
 INSERT INTO `sys_user_role` (`user_id`, `role_id`) VALUES (1, 1);
 INSERT INTO `sys_user_role` (`user_id`, `role_id`) VALUES (2, 2);
+INSERT INTO `sys_user_role` (`user_id`, `role_id`) VALUES (100, 2);
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
