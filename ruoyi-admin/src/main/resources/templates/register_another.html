@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册 | 现代网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4895ef;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #4cc9f0;
+            --error-color: #f72585;
+            --border-radius: 12px;
+            --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            --primary-color: #6b8e23; /* 橄榄绿（牧草色） */
+            --secondary-color: #556b2f; /* 深橄榄绿 */
+            --accent-color: #d4a017; /* 蜂蜜金色 */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /*            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: url('https://images.unsplash.com/photo-1596733430284-f7437764b1a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat fixed;
+            /*            background-color: rgba(255, 253, 240, 0.88); /* 奶白色透明层，避免文字看不清 */
+            */ background-blend-mode: overlay;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            display: flex;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.92); /* 提高透明度 */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* 浅色边框 */
+        }
+
+        .form-container {
+            padding: 40px;
+            width: 100%;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .form-header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-header h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            gap: 15px;
+        }
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            background-color: white;
+            color: #555;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-btn:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-2px);
+        }
+
+        .social-btn.facebook {
+            color: #3b5998;
+        }
+
+        .social-btn.google {
+            color: #db4437;
+        }
+
+        .social-btn.twitter {
+            color: #1da1f2;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .divider span {
+            padding: 0 15px;
+            color: #777;
+            font-size: 13px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background-color: #f9f9f9;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+            background-color: white;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 15px;
+            top: 40px;
+            cursor: pointer;
+            color: #777;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input {
+            margin-right: 8px;
+        }
+
+        .checkbox-group label {
+            font-size: 13px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .login-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        .illustration {
+            display: none;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            padding: 40px;
+            flex: 1;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .illustration img {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .illustration h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .illustration p {
+            font-size: 14px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .error-message {
+            color: var(--error-color);
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .form-group.error .form-control {
+            border-color: var(--error-color);
+        }
+
+        .form-group.error .error-message {
+            display: block;
+        }
+
+        .form-group.success .form-control {
+            border-color: var(--success-color);
+        }
+
+        .progress-bar {
+            height: 4px;
+            background-color: #eee;
+            border-radius: 2px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            width: 0%;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .illustration {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <div class="form-header">
+            <h1>创建账户</h1>
+            <!-- <p>加入我们的社区，开始您的旅程</p> -->
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" id="progress-bar"></div>
+        </div>
+
+        <!--             <div class="social-buttons">
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button class="social-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>或使用邮箱注册</span>
+                    </div> -->
+
+        <form id="register-form">
+            <div class="form-group">
+                <label for="username">用户名</label>
+                <input type="text" id="username" class="form-control" placeholder="输入您的用户名" required>
+                <div class="error-message">用户名至少需要3个字符</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">电子邮箱</label>
+                <input type="email" id="email" class="form-control" placeholder="输入您的电子邮箱" required>
+                <div class="error-message">请输入有效的电子邮箱地址</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" id="password" class="form-control" placeholder="输入您的密码" required>
+                <i class="fas fa-eye password-toggle" id="toggle-password"></i>
+                <div class="error-message">密码必须至少8个字符，包含字母和数字</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">确认密码</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="再次输入您的密码"
+                       required>
+                <div class="error-message">密码不匹配</div>
+            </div>
+
+            <!--                 <div class="form-footer">
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="terms" required>
+                                    <label for="terms">我同意<a href="#">服务条款</a>和<a href="#">隐私政策</a></label>
+                                </div>
+                            </div> -->
+
+            <button type="submit" class="btn btn-primary btn-block">注册</button>
+        </form>
+
+        <div class="login-link">
+            已经有账户了？ <a href="#">登录</a>
+        </div>
+    </div>
+
+    <!--         <div class="illustration">
+                <img src="https://cdn-icons-png.flaticon.com/512/2991/2991473.png" alt="Registration Illustration">
+                <h2>欢迎加入我们</h2>
+                <p>注册后您将可以访问我们所有的功能和服务，包括个性化推荐和专属优惠。</p>
+            </div> -->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 密码显示/隐藏切换
+        const togglePassword = document.getElementById('toggle-password');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        // 表单验证
+        const form = document.getElementById('register-form');
+        const progressBar = document.getElementById('progress-bar');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 验证用户名
+            const username = document.getElementById('username');
+            const usernameError = username.nextElementSibling;
+            if (username.value.length < 3) {
+                username.parentElement.classList.add('error');
+                usernameError.textContent = '用户名至少需要3个字符';
+            } else {
+                username.parentElement.classList.remove('error');
+                username.parentElement.classList.add('success');
+            }
+
+            // 验证邮箱
+            const email = document.getElementById('email');
+            const emailError = email.nextElementSibling;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                email.parentElement.classList.add('error');
+                emailError.textContent = '请输入有效的电子邮箱地址';
+            } else {
+                email.parentElement.classList.remove('error');
+                email.parentElement.classList.add('success');
+            }
+
+            // 验证密码
+            const password = document.getElementById('password');
+            const passwordError = password.nextElementSibling;
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (!passwordRegex.test(password.value)) {
+                password.parentElement.classList.add('error');
+                passwordError.textContent = '密码必须至少8个字符，包含字母和数字';
+            } else {
+                password.parentElement.classList.remove('error');
+                password.parentElement.classList.add('success');
+            }
+
+            // 验证确认密码
+            const confirmPassword = document.getElementById('confirm-password');
+            const confirmPasswordError = confirmPassword.nextElementSibling;
+            if (confirmPassword.value !== password.value) {
+                confirmPassword.parentElement.classList.add('error');
+                confirmPasswordError.textContent = '密码不匹配';
+            } else {
+                confirmPassword.parentElement.classList.remove('error');
+                confirmPassword.parentElement.classList.add('success');
+            }
+
+            // 验证条款
+            const terms = document.getElementById('terms');
+            if (!terms.checked) {
+                alert('请同意服务条款和隐私政策');
+                return;
+            }
+
+            // 如果没有错误，提交表单
+            if (!document.querySelectorAll('.form-group.error').length) {
+                alert('注册成功！');
+                // 这里可以添加实际的表单提交逻辑
+                // form.submit();
+            }
+        });
+
+        // 实时验证和进度条更新
+        form.addEventListener('input', function () {
+            const inputs = [
+                document.getElementById('username'),
+                document.getElementById('email'),
+                document.getElementById('password'),
+                document.getElementById('confirm-password')
+            ];
+
+            let validCount = 0;
+
+            inputs.forEach(input => {
+                if (input.value.length > 0) {
+                    // 简单的验证逻辑
+                    if (input.id === 'username' && input.value.length >= 3) validCount++;
+                    else if (input.id === 'email' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) validCount++;
+                    else if (input.id === 'password' && /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(input.value)) validCount++;
+                    else if (input.id === 'confirm-password' && input.value === document.getElementById('password').value) validCount++;
+                }
+            });
+
+            // 更新进度条
+            const progress = (validCount / inputs.length) * 100;
+            progressBar.style.width = `${progress}%`;
+        });
+    });
+</script>
+</body>
+</html>
