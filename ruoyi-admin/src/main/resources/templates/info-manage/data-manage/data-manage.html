@@ -42,13 +42,14 @@
 <th:block th:include="include :: jquery-cxselect-js"/>
 
 <script th:inline="javascript">
-    var prefix = ctx + "demo/table";
+    var prefix = ctx + "info-manage/";
     var datas = [[${@dict.getType('sys_normal_disable')}]];
 
     $(function () {
         var options = {
             // url: prefix + "/list",
             // rememberSelected: true,
+            modalName: "乳房炎检测数据",
             columns: [{
                 field: 'state',
                 checkbox: true
@@ -71,9 +72,11 @@
                     formatter: function (value, row, index) {
                         var actions = [];
                         actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit">检测</i></a> ');
-                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>报告</a> ');
+                        actions.push('<a class="btn btn-success btn-xs" href="javascript:;" onclick="openReport()"><i class="fa fa-edit"></i>报告</a> ');
                         actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>编辑</a> ');
-                        actions.push('<a class="btn btn-danger btn-xs" href="javascript:;"><i class="fa fa-remove"></i>删除</a> ');
+                        // actions.push('<a class="btn btn-danger btn-xs" href="javascript:;" onclick="$.operate.remove(\'1\')><i class="fa fa-remove"></i>删除</a> ');
+                        actions.push('<a class="btn btn-danger btn-xs" href="javascript:void(0)" onclick="$.operate.remove(\'1\')"><i class="fa fa-remove"></i>删除</a> ');
+
                         actions.push('<a class="btn btn-success btn-xs" href="javascript:;"><i class="fa fa-edit"></i>同步</a>');
                         return actions.join('');
                     }
@@ -143,6 +146,11 @@
         };
         $.table.init(options);
     });
+
+    function openReport() {
+        var url = prefix + '/health-report';
+        $.modal.open("健康报告", url, '800', '500');
+    }
 </script>
 </body>
 </html>
